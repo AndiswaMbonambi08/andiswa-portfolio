@@ -67,10 +67,6 @@ h1.hero-name em { font-style:italic; color:var(--rose); }
 .btn-ghost { background:transparent; color:var(--char); font-family:var(--sans); font-size:.82rem; font-weight:500; letter-spacing:.05em; padding:.9rem 2.2rem; border-radius:100px; border:1.5px solid var(--border); cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; gap:.5rem; transition:border-color .2s, background .2s, transform .15s; }
 .btn-ghost:hover { border-color:var(--rose-lt); background:var(--blush); transform:translateY(-2px); }
 
-.hero-scroll { position:absolute; bottom:3.5rem; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:.4rem; opacity:0; animation:fadeDown .6s 1.2s forwards; }
-.hero-scroll span { font-size:.65rem; color:var(--faint); letter-spacing:.15em; text-transform:uppercase; font-weight:500; }
-.scroll-mouse { width:22px; height:36px; border:1.5px solid var(--faint); border-radius:11px; display:flex; justify-content:center; padding-top:6px; }
-.scroll-dot { width:4px; height:8px; background:var(--rose-lt); border-radius:2px; animation:scrollDot 1.8s ease-in-out infinite; }
 
 /* LAYOUT */
 .container { position:relative; z-index:1; max-width:1060px; margin:0 auto; padding:0 2rem; }
@@ -246,10 +242,7 @@ footer p { font-size:.78rem; }
     <a href="#contact" class="btn-ghost">Let's Connect</a>
   </div>
 
-  <div class="hero-scroll">
-    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
-    <span>Scroll</span>
-  </div>
+
 </section>
 
 <!-- ABOUT -->
