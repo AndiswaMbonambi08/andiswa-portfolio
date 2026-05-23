@@ -31,7 +31,7 @@ nav.scrolled { padding:.85rem 5rem; box-shadow:0 2px 24px rgba(201,116,138,.07);
 
 /* HERO */
 #hero {  z-index:1; min-height:auto; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; text-align:center; padding:6rem 2rem; background:linear-gradient(180deg, var(--cream) 0%, var(--white) 100%); }
-#hero::after { content:''; position:auto; bottom:-2px; left:0; right:0; height:80px; background:var(--white); clip-path:ellipse(55% 100% at 50% 100%); }
+#hero::after { content:''; position:absolute; bottom:-2px; left:0; right:0; height:80px; background:var(--white); clip-path:ellipse(55% 100% at 50% 100%); }
 
 .hero-photo-wrapper { position:relative; margin-bottom:2rem; opacity:0; animation:fadeDown .8s .1s forwards; }
 .hero-photo { width:155px; height:155px; border-radius:50%; background:var(--blush); border:4px solid var(--white); box-shadow:0 0 0 3px var(--rose-lt), 0 16px 48px rgba(201,116,138,.2); overflow:hidden; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:box-shadow .3s, transform .3s; position:relative; }
