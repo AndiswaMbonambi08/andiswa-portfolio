@@ -293,21 +293,35 @@
           </div>
         </div>
       </div>
-      <div class="form">
-        <div class="form-row">
-          <div class="fg"><label for="cn">Full Name</label><input type="text" id="cn" placeholder=" "></div>
-          <div class="fg"><label for="ce">Email</label><input type="email" id="ce" placeholder=" "></div>
-        </div>
-        <div class="fg"><label for="cs">Subject</label><input type="text" id="cs" placeholder=" "></div>
-        <div class="fg"><label for="cm">Message</label><textarea id="cm" rows="5" placeholder=" "></textarea></div>
-        <div id="form-success">Message sent, I'll get back to you as soon as possible!</div>
-        <button class="btn-rose" onclick="sendMsg()" style="width:fit-content;">
-          Send Message
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-        </button>
-      </div>
+      <form action="https://formspree.io/f/xojblnno" method="POST" class="form">
+  <div class="form-row">
+    <div class="fg">
+      <label for="cn">Full Name</label>
+      <input type="text" id="cn" name="name" placeholder=" " required>
+    </div>
+    <div class="fg">
+      <label for="ce">Email</label>
+      <input type="email" id="ce" name="email" placeholder=" " required>
     </div>
   </div>
+  <div class="fg">
+    <label for="cs">Subject</label>
+    <input type="text" id="cs" name="subject" placeholder=" " required>
+  </div>
+  <div class="fg">
+    <label for="cm">Message</label>
+    <textarea id="cm" name="message" rows="5" placeholder=" " required></textarea>
+  </div>
+  <div id="form-success">Message sent, I'll get back to you as soon as possible!</div>
+  <button class="btn-rose" type="submit" style="width:fit-content;">
+    Send Message
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <line x1="22" y1="2" x2="11" y2="13"/>
+      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+    </svg>
+  </button>
+</form>
+
 </section>
 
 <footer>
